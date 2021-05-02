@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beds",
+  "info": {
+    "name": "bed"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hospital": {
+      "type": "string",
+      "required": true
+    },
+    "bedCount": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "contact": {
+      "type": "biginteger"
+    },
+    "pincode": {
+      "type": "biginteger",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    }
+  }
+}
