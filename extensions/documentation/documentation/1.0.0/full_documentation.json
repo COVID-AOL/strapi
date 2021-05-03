@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/01/2021 11:20:54 PM"
+    "x-generation-date": "05/03/2021 11:29:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -503,6 +503,74 @@
                 "schema": {
                   "type": "integer",
                   "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Bed"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/beds/city/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -2788,9 +2856,7 @@
       "Bed": {
         "required": [
           "id",
-          "hospital",
-          "state",
-          "description",
+          "hospitalName",
           "pincode",
           "verified"
         ],
@@ -2798,13 +2864,10 @@
           "id": {
             "type": "string"
           },
-          "hospital": {
+          "hospitalName": {
             "type": "string"
           },
           "bedCount": {
-            "type": "string"
-          },
-          "state": {
             "type": "string"
           },
           "description": {
@@ -2827,6 +2890,12 @@
           },
           "paid": {
             "type": "boolean"
+          },
+          "city": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -2836,20 +2905,15 @@
       },
       "NewBed": {
         "required": [
-          "hospital",
-          "state",
-          "description",
+          "hospitalName",
           "pincode",
           "verified"
         ],
         "properties": {
-          "hospital": {
+          "hospitalName": {
             "type": "string"
           },
           "bedCount": {
-            "type": "string"
-          },
-          "state": {
             "type": "string"
           },
           "description": {
@@ -2872,6 +2936,12 @@
           },
           "paid": {
             "type": "boolean"
+          },
+          "city": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/beds/city/:id",
+      "handler": "bed.findByCity",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
