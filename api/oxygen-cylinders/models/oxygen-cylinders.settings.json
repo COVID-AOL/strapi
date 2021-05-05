@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oxygen_cylinders",
+  "info": {
+    "name": "oxygenCylinders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "biginteger",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

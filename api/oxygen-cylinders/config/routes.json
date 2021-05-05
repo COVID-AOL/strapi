@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/oxygen-cylinders",
+      "handler": "oxygen-cylinders.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oxygen-cylinders/count",
+      "handler": "oxygen-cylinders.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/oxygen-cylinders/:id",
+      "handler": "oxygen-cylinders.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/oxygen-cylinders",
+      "handler": "oxygen-cylinders.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/oxygen-cylinders/:id",
+      "handler": "oxygen-cylinders.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/oxygen-cylinders/:id",
+      "handler": "oxygen-cylinders.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
