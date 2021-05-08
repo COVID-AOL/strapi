@@ -533,7 +533,10 @@
           "name",
           "contact",
           "city",
-          "verified"
+          "verified",
+          "filled",
+          "empty",
+          "refill"
         ],
         "properties": {
           "id": {
@@ -551,6 +554,15 @@
           "verified": {
             "type": "boolean"
           },
+          "filled": {
+            "type": "boolean"
+          },
+          "empty": {
+            "type": "boolean"
+          },
+          "refill": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -562,7 +574,10 @@
           "name",
           "contact",
           "city",
-          "verified"
+          "verified",
+          "filled",
+          "empty",
+          "refill"
         ],
         "properties": {
           "name": {
@@ -575,6 +590,15 @@
             "type": "string"
           },
           "verified": {
+            "type": "boolean"
+          },
+          "filled": {
+            "type": "boolean"
+          },
+          "empty": {
+            "type": "boolean"
+          },
+          "refill": {
             "type": "boolean"
           },
           "published_at": {

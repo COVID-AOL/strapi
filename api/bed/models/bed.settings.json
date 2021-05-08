@@ -24,9 +24,6 @@
       "required": false
     },
     "contact": {
-      "type": "biginteger"
-    },
-    "pincode": {
       "type": "biginteger",
       "required": true
     },
@@ -40,14 +37,24 @@
     "website": {
       "type": "string"
     },
-    "paid": {
-      "type": "boolean"
-    },
     "city": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "address": {
       "type": "string"
+    },
+    "ventilator": {
+      "type": "boolean",
+      "required": true
+    },
+    "icu": {
+      "type": "boolean",
+      "required": true
+    },
+    "oxygen": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
