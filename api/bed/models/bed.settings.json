@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beds",
+  "info": {
+    "name": "bed",
+    "description": "Beds Available in Hospitals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hospitalName": {
+      "type": "string",
+      "required": true
+    },
+    "bedCount": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "contact": {
+      "type": "biginteger"
+    },
+    "pincode": {
+      "type": "biginteger",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}
