@@ -27,6 +27,18 @@
     "verified": {
       "type": "boolean",
       "required": true
+    },
+    "filled": {
+      "type": "boolean",
+      "required": true
+    },
+    "empty": {
+      "type": "boolean",
+      "required": true
+    },
+    "refill": {
+      "type": "boolean",
+      "required": true
     }
   }
 }

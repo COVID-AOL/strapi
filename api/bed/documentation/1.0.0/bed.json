@@ -586,8 +586,12 @@
         "required": [
           "id",
           "hospitalName",
-          "pincode",
-          "verified"
+          "contact",
+          "verified",
+          "city",
+          "ventilator",
+          "icu",
+          "oxygen"
         ],
         "properties": {
           "id": {
@@ -605,9 +609,6 @@
           "contact": {
             "type": "integer"
           },
-          "pincode": {
-            "type": "integer"
-          },
           "verified": {
             "type": "boolean"
           },
@@ -617,14 +618,20 @@
           "website": {
             "type": "string"
           },
-          "paid": {
-            "type": "boolean"
-          },
           "city": {
             "type": "string"
           },
           "address": {
             "type": "string"
+          },
+          "ventilator": {
+            "type": "boolean"
+          },
+          "icu": {
+            "type": "boolean"
+          },
+          "oxygen": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",
@@ -635,8 +642,12 @@
       "NewBed": {
         "required": [
           "hospitalName",
-          "pincode",
-          "verified"
+          "contact",
+          "verified",
+          "city",
+          "ventilator",
+          "icu",
+          "oxygen"
         ],
         "properties": {
           "hospitalName": {
@@ -651,9 +662,6 @@
           "contact": {
             "type": "integer"
           },
-          "pincode": {
-            "type": "integer"
-          },
           "verified": {
             "type": "boolean"
           },
@@ -663,14 +671,20 @@
           "website": {
             "type": "string"
           },
-          "paid": {
-            "type": "boolean"
-          },
           "city": {
             "type": "string"
           },
           "address": {
             "type": "string"
+          },
+          "ventilator": {
+            "type": "boolean"
+          },
+          "icu": {
+            "type": "boolean"
+          },
+          "oxygen": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",
